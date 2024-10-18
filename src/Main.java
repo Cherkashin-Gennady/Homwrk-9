@@ -33,23 +33,13 @@ public class Main {
             sum += arrExpenses[i];
         }
         double average = (double) sum / arrExpenses.length;
-        System.out.println("Средняя сумма трат за месяц составила "+ average +" рублей.");
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей.");
 
         //Task 4
         System.out.println("Задача 4");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        System.out.println("Массив перед реверсом:");
-        for (char i = 0; i < reverseFullName.length; i++) {
-            System.out.print(reverseFullName[i] + " ");
-        }
-        for (char i = 0; i < reverseFullName.length / 2; i++) {
-            char temp = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
-            reverseFullName[reverseFullName.length - 1 - i] = temp;
-        }
-        System.out.println("\nМассив после реверса:");
-        for (char i = 0; i < reverseFullName.length; i++) {
-            System.out.print(reverseFullName[i] + " ");
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--){
+            System.out.print(reverseFullName[i]);
         }
     }
 }
